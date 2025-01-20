@@ -1,0 +1,13 @@
+PORT=3000
+DB_NAME="nombre de la base de datos"
+DB_USER=root
+DB_PASS="contraseña de la base de datos"
+DB_HOST=localhost
+DB_DIALECT=mysql
+JWT_SECRET=your_jwt_secret
+
+NODE_ENV=development
+
+
+EMAIL_USER="correo electronico"
+EMAIL_PASS="contraseña del correo electronico"
