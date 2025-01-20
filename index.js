@@ -8,6 +8,7 @@ const routes = require('./routes');
 const swaggerOptions = require('./config/swagger');
 const cors = require('cors');
 
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -22,6 +23,9 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // Rutas
 app.use('/api', routes);
+
+
+
 
 // Sincronización y arranque del servidor
 sequelize.sync({ force: true }).then(() => {
