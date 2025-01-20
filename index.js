@@ -28,6 +28,6 @@ app.use('/api', routes);
 
 
 // Sincronización y arranque del servidor
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 });
